@@ -210,11 +210,11 @@ function Home({ id }) {
               </div>
               <div class="flex justify-between py-4 ">
                 <span class="text-base font-medium text-gray-700 dark:text-white">
-                  {doners.length}+ Donated
+                  {doners?.length}+ Donated
                 </span>
                 <div className=" bg-blue-600 py-1 px-3 text-white text-lg rounded-full overflow-hidden mb-3 ">
                   {dateFormat(
-                    (new Date(donation.endDate.toString()), 'dd mmm yy')
+                    (new Date(donation_?.endDate?.toString()), 'dd mmm yy')
                   )}
                 </div>
               </div>
