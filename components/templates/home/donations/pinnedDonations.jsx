@@ -4,7 +4,7 @@ import { AuthContext } from '../../../../utils/AuthProvider';
 import { numDaysBetween, truncateString } from '../../../../lib/utilities';
 import dateFormat from 'dateformat'
 import { ethers } from 'ethers';
-
+import moment from 'moment'
 
 const pinnedDonations = () => {
   const { address, signer, contract, ethprice } = useContext(AuthContext);
@@ -53,9 +53,10 @@ const pinnedDonations = () => {
                   title={donation.title}
                   description={truncateString(donation.description, 30)}
                   image={donation.hash}
-                  endDate={dateFormat(
-                    (new Date(donation.endDate.toString()), 'dd mmm yy')
-                  )}
+                  endDate={moment.unix(donation.endDate.toString()).format("MM/DD/YYYY")}
+                  // endDate={dateFormat(
+                  //   (donation.endDate.toString(), 'dd mmm yy')
+                  // )}
                   targetedAmount={(
                     Number(
                       ethers.utils.formatEther(

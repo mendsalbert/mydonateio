@@ -12,6 +12,7 @@ import Spinner from '../utility/spinner/Spinner';
 import { RWebShare } from 'react-web-share';
 import { ShareIcon } from '@heroicons/react/outline';
 import dateFormat from 'dateformat';
+import moment from 'moment/moment';
 function Home({ id }) {
   const [modal, setModal] = useState(false);
   const [amount, setamount] = useState(0);
@@ -213,9 +214,11 @@ function Home({ id }) {
                   {doners?.length}+ Donated
                 </span>
                 <div className=" bg-blue-600 py-1 px-3 text-white text-lg rounded-full overflow-hidden mb-3 ">
-                  {dateFormat(
-                    (new Date(donation_?.endDate?.toString()), 'dd mmm yy')
-                  )}
+                  {/* {dateFormat(
+                    (new Date(donation_?.startDate?.toString()), 'dd mmm yy')
+                  )} */}
+                    {moment.unix(donation_?.endDate.toString()).format("MM/DD/YYYY")}
+
                 </div>
               </div>
               <button

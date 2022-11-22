@@ -6,6 +6,7 @@ import { numDaysBetween, truncateString } from '../../../../lib/utilities';
 import { ethers } from 'ethers';
 import { AuthContext } from '../../../../utils/AuthProvider'; 
 import dateFormat from 'dateformat'
+import moment from 'moment';
 const TrendingDonation = () => {
   const { address, connect, contract, ethprice } = useContext(AuthContext);
   const [donations, setdonations] = useState([
@@ -56,17 +57,7 @@ const TrendingDonation = () => {
                 40
               )}{' '}
             </p>
-            <div className="flex flex-row space-x-2 items-center">
-              <ion-icon
-                name="time-outline"
-                class=" text-lg md:text-2xl dark:text-gray-100"
-              ></ion-icon>
-              <p className="text-lg md:text-xl dark:text-gray-100">
-              {dateFormat(
-                    (new Date(donations?.endDate?.toString()), 'dd mmm yy')
-                  )}
-              </p>
-            </div>
+           
             <div className="flex flex-row space-x-2 items-center">
               <ion-icon
                 name="wallet-outline"

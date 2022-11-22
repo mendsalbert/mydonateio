@@ -204,7 +204,7 @@ function Fund() {
                             <td class="p-4 space-x-3 text-gray-700 whitespace-nowrap">
                               {Math.round(
                                 numDaysBetween(
-                                  Number(donationItem.endDate.toString()),
+                                  Number(donationItem.startDate.toString()),
                                   new Date()
                                 )
                               ) <= 1 ? (

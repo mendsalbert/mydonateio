@@ -4,6 +4,7 @@ import { AuthContext } from '../../../../utils/AuthProvider';
 import { numDaysBetween, truncateString } from '../../../../lib/utilities';
 import { ethers } from 'ethers';
 import dateFormat from 'dateformat';
+import moment from 'moment/moment';
 const Index = ({ query }) => {
   const { address, signer, contract, ethprice } = useContext(AuthContext);
   const [donations, setdonations] = useState([]);
@@ -54,9 +55,11 @@ const Index = ({ query }) => {
               title={donation.title}
               description={truncateString(donation.description, 30)}
               image={donation.hash}
-              endDate={dateFormat(
-                (new Date(donation.endDate.toString()), 'dd mmm yy')
-              )}
+              endDate={moment.unix(donation.endDate.toString()).format("MM/DD/YYYY")}
+
+              // endDate={dateFormat(
+              //   (new Date(donation.endDate.toString()), 'dd mmm yy')
+              // )}
               targetedAmount={(
                 Number(
                   ethers.utils.formatEther(donation.targetedAmount.toString())

@@ -3,7 +3,7 @@ import Card from './card';
 import { AuthContext } from '../../../../utils/AuthProvider';
 import { numDaysBetween, truncateString } from '../../../../lib/utilities';
 import dateFormat, { masks } from 'dateformat';
-
+import moment from 'moment';
 import { ethers } from 'ethers';
 const Index = () => {
   let PageSize = 10;
@@ -51,9 +51,7 @@ const Index = () => {
                   title={truncateString(donation.title, 14)}
                   description={truncateString(donation.description, 20)}
                   image={donation.hash}
-                  endDate={dateFormat(
-                    (new Date(donation.endDate.toString()), 'dd mmm yy')
-                  )}
+                  endDate={moment.unix(donation.endDate.toString()).format("MM/DD/YYYY")}
                   targetedAmount={(
                     Number(
                       ethers.utils.formatEther(
