@@ -347,7 +347,7 @@ function Footer() {
               <span class="block sm:inline">All rights reserved.</span>
 
               <a
-                class="inline-block text-teal-600 underline transition dark:text-gray-200 hover:text-teal-600/75"
+                class="inline-block pr-3 pl-3 text-teal-600 underline transition dark:text-gray-200 hover:text-teal-600/75"
                 href="/terms-condition"
               >
                 Terms & Conditions
