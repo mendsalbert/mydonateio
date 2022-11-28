@@ -85,11 +85,13 @@ function Header() {
 
                 <div className="flex-1 flex  items-center justify-center sm:items-stretch sm:justify-start">
                   <div className="flex-shrink-0 flex items-center space-x-4">
+                    <Link href={'/'}>
                     <img
                       className="block  w-9 "
                       src="/images/logo.svg"
                       alt="Workflow"
-                    />
+                      />
+                      </Link>
                   </div>
                   <div className="hidden sm:block sm:ml-6">
                     <div className="flex space-x-4">

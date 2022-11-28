@@ -38,25 +38,25 @@ const Card = ({
           <div className="flex flex-row space-x-2 items-center">
             <ion-icon
               name="time-outline"
-              class="text-2xl dark:text-gray-100"
+              class="text-xl dark:text-gray-100"
             ></ion-icon>
-            <p className="text-xl dark:text-gray-100">{endDate}</p>
+            <p className="text-lg dark:text-gray-100">{endDate}</p>
           </div>
           <div className="flex flex-row space-x-2 items-center">
             <ion-icon
               name="wallet-outline"
-              class="text-2xl dark:text-gray-100"
+              class="text-xl dark:text-gray-100"
             ></ion-icon>
-            <p className="text-xl w-max dark:text-gray-200">
+            <p className="text-lg w-max dark:text-gray-200">
               ${targetedAmount}
             </p>
           </div>
           <div className="flex flex-row space-x-2 items-center">
             <ion-icon
               name="earth-outline"
-              class="text-2xl dark:text-gray-200"
+              class="text-xl dark:text-gray-200"
             ></ion-icon>
-            <p className="text-xl dark:text-gray-100">{country}</p>
+            <p className="text-lg dark:text-gray-100">{country}</p>
           </div>
           {!address ? (
             <div
