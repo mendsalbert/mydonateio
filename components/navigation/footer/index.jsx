@@ -356,7 +356,7 @@ function Footer() {
               <span>&middot;</span>
 
               <a
-                class="inline-block text-teal-600 underline transition hover:text-teal-600/75"
+                class="inline-block text-teal-600 underline transition dark:text-gray-200 hover:text-teal-600/75"
                 href="/privacy-policy"
               >
                 Privacy Policy
