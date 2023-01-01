@@ -3,9 +3,8 @@ require('@nomiclabs/hardhat-waffle');
 require('hardhat-contract-sizer');
 const fs = require('fs');
 const privateKey =
-  '03ddc38c78394e0c436837a0b89ef2d15ad4a264a33cb2bc6f345560c595b37a';
+  '2b2602c128a951a07c50bfc30a46f8c08d4bd95574d8dd2d06c0a8e115d4cfde';
 const projectId = 'xxx';
-
 
 module.exports = {
   defaultNetwork: 'hardhat',
@@ -21,12 +20,12 @@ module.exports = {
       accounts: [privateKey],
     },
     matic: {
-      url:
-        'https://polygon-mumbai.g.alchemy.com/v2/2bGIFu-iEnl9RvAOTe1ddZI2gBnuYQGS',
+      url: 'https://polygon-mumbai.g.alchemy.com/v2/2bGIFu-iEnl9RvAOTe1ddZI2gBnuYQGS',
       accounts: [privateKey],
     },
-    mainet: {
-      url: `https://palm-mainnet.infura.io/v3/${projectId}`,
+    mainnet: {
+      url: `https://eth-mainnet.g.alchemy.com/v2/ht3EwBZKTsFIetiICm5Oxirlph5DmshC`,
+      accounts: [privateKey],
     },
     kovan: {
       url: 'https://kovan.infura.io/v3/745fcbe1f649402c9063fa946fdbb84c',

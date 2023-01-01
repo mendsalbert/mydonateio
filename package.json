@@ -34,6 +34,7 @@
     "millify": "^4.0.0",
     "moment": "^2.29.4",
     "next": "latest",
+    "npm": "9.2.0",
     "postcss": "^8.4.12",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
