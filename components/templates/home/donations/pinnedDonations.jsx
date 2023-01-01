@@ -67,7 +67,7 @@ const pinnedDonations = () => {
                   country={ truncateString(donation.user.country, 10)}
                 />
               </div>
-            ))}
+            )).reverse()}
         </div>
         {/* </div> */}
       </div>
