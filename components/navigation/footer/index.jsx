@@ -280,7 +280,7 @@ function Footer() {
                     </svg>
 
                     <span class="text-gray-700 dark:text-gray-100">
-                      mydonate.org@gmail.com
+                      mydonateio@gmail.com
                     </span>
                   </a>
                 </li>
