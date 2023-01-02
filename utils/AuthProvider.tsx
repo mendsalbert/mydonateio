@@ -204,7 +204,8 @@ const AuthProvider = ({ children }) => {
     /* create a generic provider and query for unsold market items */
     // const provider = new ethers.providers.JsonRpcProvider();
     const provider = new ethers.providers.JsonRpcProvider(
-      'https://rpc-mumbai.maticvigil.com/'
+      // 'https://rpc-mumbai.maticvigil.com/'
+      'https://eth-mainnet.g.alchemy.com/v2/ht3EwBZKTsFIetiICm5Oxirlph5DmshC'
     );
     // 'https://rpc-mumbai.matic.today'
     // https://polygon-mumbai.g.alchemy.com/v2/2bGIFu-iEnl9RvAOTe1ddZI2gBnuYQGS'
