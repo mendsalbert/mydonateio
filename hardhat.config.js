@@ -2,8 +2,7 @@
 require('@nomiclabs/hardhat-waffle');
 require('hardhat-contract-sizer');
 const fs = require('fs');
-const privateKey =
-  '2b2602c128a951a07c50bfc30a46f8c08d4bd95574d8dd2d06c0a8e115d4cfde';
+const privateKey = '';
 const projectId = 'xxx';
 
 module.exports = {
