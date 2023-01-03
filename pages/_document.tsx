@@ -24,8 +24,8 @@ export default function Document() {
         <link
           href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap"
           rel="stylesheet"
-        />
-      </Head>
+        /><script async src="https://www.googletagmanager.com/gtag/js?id=G-PLC0SMCTTS"></script>
+      </Head>      
       <body>
         <Main />
         <NextScript />
