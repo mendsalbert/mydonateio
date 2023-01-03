@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
-
+import Donation from './donation'
+import Fund from './fund'
 import Sidebar from '../../components/partials/profile/Sidebar';
 import Header from '../../components/partials/profile/Header';
 import WelcomeBanner from '../../components/partials/profile/dashboard/WelcomeBanner';
@@ -96,9 +97,13 @@ function Profile() {
                   text="Total of amount of ETH donated"
                   unit={'ETH'}
                 />
+               
               </div>
             </div>
+          <Fund/>
+            <Donation />
           </main>
+         
         </div>
       </div>
     </>
