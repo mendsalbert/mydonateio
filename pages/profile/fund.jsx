@@ -75,17 +75,17 @@ function Fund() {
       <div className="flex h-screen overflow-hidden dark:bg-gray-900 font-Montserrat">
         {/* Sidebar */}
 
-        {/* <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} /> */}
+        <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
 
         {/* Content are */}
         <div className="relative flex flex-col flex-1 overflow-y-auto overflow-x-hidden">
           {/*  Site header */}
-          {/* <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} /> */}
+          <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
 
           <main>
             <div className="px-4 sm:px-6 lg:px-8 py-8 w-full max-w-9xl mx-auto">
               {/* Welcome bannr */}
-              {/* <WelcomeBanner type="Admin" address={address} /> */}
+              <WelcomeBanner type="Admin" address={address} />
               {/* Cards */}
               <div className="sm:flex sm:justify-end sm:items-center mb-8">
                 <div className="grid grid-flow-col sm:auto-cols-max justify-end sm:justify-end gap-2">

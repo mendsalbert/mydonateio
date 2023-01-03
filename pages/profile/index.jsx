@@ -100,10 +100,7 @@ function Profile() {
                
               </div>
             </div>
-          <Fund/>
-            <Donation />
           </main>
-         
         </div>
       </div>
     </>
