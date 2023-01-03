@@ -296,7 +296,7 @@ function Footer() {
             </p>
 
             <p class="mt-4 text-sm dark:text-gray-200 text-gray-500 sm:order-first sm:mt-0">
-              &copy; 2023 Company Name
+              &copy; 2023 mydonateio
             </p>
           </div>
         </div>
