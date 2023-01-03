@@ -65,7 +65,7 @@ function Footer() {
 
               <li>
                 <a
-                  href="https://twitter.com/MyDonateio"
+                  href="https://www.youtube.com/channel/UCI-GeRrrplWQEwAY5vd4mCw"
                   rel="noopener noreferrer"
                   target="_blank"
                   class="text-teal-700 transition hover:text-teal-700/75"
