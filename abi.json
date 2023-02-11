@@ -1,0 +1,1269 @@
+
+ 
+ [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "companyaddress_",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_id",
+          "type": "uint256"
+        }
+      ],
+      "name": "addDonation",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "amountRaised",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_id",
+          "type": "uint256"
+        }
+      ],
+      "name": "approveDonation",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address payable",
+              "name": "owner",
+              "type": "address"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "id",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "address",
+                  "name": "_address",
+                  "type": "address"
+                },
+                {
+                  "internalType": "string",
+                  "name": "userType",
+                  "type": "string"
+                },
+                {
+                  "internalType": "string",
+                  "name": "country",
+                  "type": "string"
+                },
+                {
+                  "internalType": "string",
+                  "name": "city",
+                  "type": "string"
+                },
+                {
+                  "internalType": "string",
+                  "name": "email",
+                  "type": "string"
+                },
+                {
+                  "internalType": "string",
+                  "name": "residenceAddress",
+                  "type": "string"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "isRegistered",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "string",
+                  "name": "website",
+                  "type": "string"
+                },
+                {
+                  "internalType": "string",
+                  "name": "facebookUrl",
+                  "type": "string"
+                },
+                {
+                  "internalType": "string",
+                  "name": "twitterUrl",
+                  "type": "string"
+                },
+                {
+                  "internalType": "string",
+                  "name": "instagramUrl",
+                  "type": "string"
+                },
+                {
+                  "internalType": "string",
+                  "name": "youtubeUrl",
+                  "type": "string"
+                },
+                {
+                  "internalType": "string",
+                  "name": "hash",
+                  "type": "string"
+                }
+              ],
+              "internalType": "struct Donation.User",
+              "name": "user",
+              "type": "tuple"
+            },
+            {
+              "internalType": "uint256",
+              "name": "donersCount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "donationsRaised",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "startDate",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "endDate",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "targetedAmount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "string",
+              "name": "category",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "hash",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "purpose",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "bool",
+                  "name": "completed",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "isPinned",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "pinnedDuration",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "pinnedEndDate",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "isVisible",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "isApproved",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "approvedDate",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "isRejected",
+                  "type": "bool"
+                }
+              ],
+              "internalType": "struct Donation.DonationStatus",
+              "name": "donationstatus",
+              "type": "tuple"
+            }
+          ],
+          "internalType": "struct Donation.DonationItem",
+          "name": "donation_",
+          "type": "tuple"
+        },
+        {
+          "internalType": "uint256",
+          "name": "id_",
+          "type": "uint256"
+        }
+      ],
+      "name": "createDonation",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_id",
+          "type": "uint256"
+        }
+      ],
+      "name": "disablePinnedDonation",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "donationCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "doners",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "date",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "doner",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "donersCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "fetchAllDonationItems",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address payable",
+              "name": "owner",
+              "type": "address"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "id",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "address",
+                  "name": "_address",
+                  "type": "address"
+                },
+                {
+                  "internalType": "string",
+                  "name": "userType",
+                  "type": "string"
+                },
+                {
+                  "internalType": "string",
+                  "name": "country",
+                  "type": "string"
+                },
+                {
+                  "internalType": "string",
+                  "name": "city",
+                  "type": "string"
+                },
+                {
+                  "internalType": "string",
+                  "name": "email",
+                  "type": "string"
+                },
+                {
+                  "internalType": "string",
+                  "name": "residenceAddress",
+                  "type": "string"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "isRegistered",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "string",
+                  "name": "website",
+                  "type": "string"
+                },
+                {
+                  "internalType": "string",
+                  "name": "facebookUrl",
+                  "type": "string"
+                },
+                {
+                  "internalType": "string",
+                  "name": "twitterUrl",
+                  "type": "string"
+                },
+                {
+                  "internalType": "string",
+                  "name": "instagramUrl",
+                  "type": "string"
+                },
+                {
+                  "internalType": "string",
+                  "name": "youtubeUrl",
+                  "type": "string"
+                },
+                {
+                  "internalType": "string",
+                  "name": "hash",
+                  "type": "string"
+                }
+              ],
+              "internalType": "struct Donation.User",
+              "name": "user",
+              "type": "tuple"
+            },
+            {
+              "internalType": "uint256",
+              "name": "donersCount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "donationsRaised",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "startDate",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "endDate",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "targetedAmount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "string",
+              "name": "category",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "hash",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "purpose",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "bool",
+                  "name": "completed",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "isPinned",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "pinnedDuration",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "pinnedEndDate",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "isVisible",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "isApproved",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "approvedDate",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "isRejected",
+                  "type": "bool"
+                }
+              ],
+              "internalType": "struct Donation.DonationStatus",
+              "name": "donationstatus",
+              "type": "tuple"
+            }
+          ],
+          "internalType": "struct Donation.DonationItem[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "fetchAllUsers",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "_address",
+              "type": "address"
+            },
+            {
+              "internalType": "string",
+              "name": "userType",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "country",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "city",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "email",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "residenceAddress",
+              "type": "string"
+            },
+            {
+              "internalType": "bool",
+              "name": "isRegistered",
+              "type": "bool"
+            },
+            {
+              "internalType": "string",
+              "name": "website",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "facebookUrl",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "twitterUrl",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "instagramUrl",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "youtubeUrl",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "hash",
+              "type": "string"
+            }
+          ],
+          "internalType": "struct Donation.User[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_id",
+          "type": "uint256"
+        }
+      ],
+      "name": "getDonation",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address payable",
+              "name": "owner",
+              "type": "address"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "id",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "address",
+                  "name": "_address",
+                  "type": "address"
+                },
+                {
+                  "internalType": "string",
+                  "name": "userType",
+                  "type": "string"
+                },
+                {
+                  "internalType": "string",
+                  "name": "country",
+                  "type": "string"
+                },
+                {
+                  "internalType": "string",
+                  "name": "city",
+                  "type": "string"
+                },
+                {
+                  "internalType": "string",
+                  "name": "email",
+                  "type": "string"
+                },
+                {
+                  "internalType": "string",
+                  "name": "residenceAddress",
+                  "type": "string"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "isRegistered",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "string",
+                  "name": "website",
+                  "type": "string"
+                },
+                {
+                  "internalType": "string",
+                  "name": "facebookUrl",
+                  "type": "string"
+                },
+                {
+                  "internalType": "string",
+                  "name": "twitterUrl",
+                  "type": "string"
+                },
+                {
+                  "internalType": "string",
+                  "name": "instagramUrl",
+                  "type": "string"
+                },
+                {
+                  "internalType": "string",
+                  "name": "youtubeUrl",
+                  "type": "string"
+                },
+                {
+                  "internalType": "string",
+                  "name": "hash",
+                  "type": "string"
+                }
+              ],
+              "internalType": "struct Donation.User",
+              "name": "user",
+              "type": "tuple"
+            },
+            {
+              "internalType": "uint256",
+              "name": "donersCount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "donationsRaised",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "startDate",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "endDate",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "targetedAmount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "string",
+              "name": "category",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "hash",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "purpose",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "bool",
+                  "name": "completed",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "isPinned",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "pinnedDuration",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "pinnedEndDate",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "isVisible",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "isApproved",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "approvedDate",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "isRejected",
+                  "type": "bool"
+                }
+              ],
+              "internalType": "struct Donation.DonationStatus",
+              "name": "donationstatus",
+              "type": "tuple"
+            }
+          ],
+          "internalType": "struct Donation.DonationItem",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_id",
+          "type": "uint256"
+        }
+      ],
+      "name": "getDonersOfDonation",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "date",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "doner",
+              "type": "address"
+            }
+          ],
+          "internalType": "struct Donation.Doners[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getEthUsd",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "idToDonationItem",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address payable",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "_address",
+              "type": "address"
+            },
+            {
+              "internalType": "string",
+              "name": "userType",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "country",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "city",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "email",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "residenceAddress",
+              "type": "string"
+            },
+            {
+              "internalType": "bool",
+              "name": "isRegistered",
+              "type": "bool"
+            },
+            {
+              "internalType": "string",
+              "name": "website",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "facebookUrl",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "twitterUrl",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "instagramUrl",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "youtubeUrl",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "hash",
+              "type": "string"
+            }
+          ],
+          "internalType": "struct Donation.User",
+          "name": "user",
+          "type": "tuple"
+        },
+        {
+          "internalType": "uint256",
+          "name": "donersCount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "donationsRaised",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "startDate",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "endDate",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "targetedAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "category",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "hash",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "purpose",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "components": [
+            {
+              "internalType": "bool",
+              "name": "completed",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "isPinned",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint256",
+              "name": "pinnedDuration",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "pinnedEndDate",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "isVisible",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "isApproved",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint256",
+              "name": "approvedDate",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "isRejected",
+              "type": "bool"
+            }
+          ],
+          "internalType": "struct Donation.DonationStatus",
+          "name": "donationstatus",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "isUserRegistered",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "bool",
+              "name": "status",
+              "type": "bool"
+            },
+            {
+              "internalType": "string",
+              "name": "userType",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct Donation.IsRegistered",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_duration",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_pinnedEndDate",
+          "type": "uint256"
+        }
+      ],
+      "name": "pinDonation",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "registeredUsers",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "status",
+          "type": "bool"
+        },
+        {
+          "internalType": "string",
+          "name": "userType",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_id",
+          "type": "uint256"
+        }
+      ],
+      "name": "rejectDonation",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "users",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "_address",
+          "type": "address"
+        },
+        {
+          "internalType": "string",
+          "name": "userType",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "country",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "city",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "email",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "residenceAddress",
+          "type": "string"
+        },
+        {
+          "internalType": "bool",
+          "name": "isRegistered",
+          "type": "bool"
+        },
+        {
+          "internalType": "string",
+          "name": "website",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "facebookUrl",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "twitterUrl",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "instagramUrl",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "youtubeUrl",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "hash",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "usersCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ]
