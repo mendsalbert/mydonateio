@@ -205,7 +205,8 @@ const AuthProvider = ({ children }) => {
     // const provider = new ethers.providers.JsonRpcProvider();
     const provider = new ethers.providers.JsonRpcProvider(
       // 'https://rpc-mumbai.maticvigil.com/'
-      'https://eth-mainnet.g.alchemy.com/v2/ht3EwBZKTsFIetiICm5Oxirlph5DmshC'
+      // 'https://eth-mainnet.g.alchemy.com/v2/ht3EwBZKTsFIetiICm5Oxirlph5DmshC'
+      'https://rpc.testnet.mantle.xyz/'
     );
     // 'https://rpc-mumbai.matic.today'
     // https://polygon-mumbai.g.alchemy.com/v2/2bGIFu-iEnl9RvAOTe1ddZI2gBnuYQGS'
