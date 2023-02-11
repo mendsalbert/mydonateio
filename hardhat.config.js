@@ -2,7 +2,7 @@
 require('@nomiclabs/hardhat-waffle');
 require('hardhat-contract-sizer');
 const fs = require('fs');
-const privateKey = '';
+const privateKey = fs.readFileSync('secret.txt').toString();
 const projectId = 'xxx';
 
 module.exports = {
@@ -20,6 +20,11 @@ module.exports = {
     },
     matic: {
       url: 'https://polygon-mumbai.g.alchemy.com/v2/2bGIFu-iEnl9RvAOTe1ddZI2gBnuYQGS',
+      accounts: [privateKey],
+    },
+    mantel: {
+      url: 'https://rpc.testnet.mantle.xyz',
+      allowUnlimitedContractSize: true,
       accounts: [privateKey],
     },
     mainnet: {

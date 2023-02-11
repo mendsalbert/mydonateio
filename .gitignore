@@ -7,6 +7,6 @@ node_modules
 coverage
 coverage.json
 typechain
-
+secret.txt
 #Hardhat files
 cache

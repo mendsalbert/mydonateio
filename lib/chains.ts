@@ -211,6 +211,22 @@ const supportedChains: IChainData[] = [
     },
   },
   {
+    name: 'Mantle Testnet',
+    short_name: 'MTC',
+    chain: 'smartchain',
+    network: 'mainnet',
+    chain_id: 5001,
+    network_id: 5001,
+    rpc_url: 'https://rpc.testnet.mantle.xyz',
+    native_currency: {
+      symbol: 'BIT',
+      name: 'BIT',
+      decimals: '18',
+      contractAddress: '',
+      balance: '',
+    },
+  },
+  {
     name: 'Matic',
     short_name: 'MTC',
     chain: 'smartchain',
